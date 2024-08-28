@@ -1,0 +1,31 @@
+#banner {
+	background-image: url('../img/banner-clubmembers-2.png');
+	background-size: cover;
+	background-position: center center;
+	height: 40vh;
+}
+
+.container pt-4 py-3 {
+	font-style: extra bold;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	#banner {
+		height: 60vh;
+	}
+}
+
+.img-overlay {
+	display: none;
+	z-index: 2;
+}
+
+.img-overlay-container:hover .img-overlay {
+	display: initial;
+}
+
+
+.text-bg-purple { color: purple !important; background-color: rgba(255, 193, 7, var(--bs-bg-opacity, 1)) !important; }
