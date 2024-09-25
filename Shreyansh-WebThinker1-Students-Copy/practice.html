@@ -63,7 +63,11 @@
 
       if (document.getElementById("phone").value.length == 0) {
         document.getElementById("error-warn").classList="";
+        document.getElementById("phone").classList="form-control is-invalid";
 
+      } else {
+        document.getElementById("error-warn").classList="d-none";
+        document.getElementById("phone").classList="form-control;
 
       }
 
