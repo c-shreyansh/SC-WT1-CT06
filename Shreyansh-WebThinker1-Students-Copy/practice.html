@@ -7,49 +7,67 @@
   <link href="/script/practice.css" rel="stylesheet" />
   <link href="script/bootstrap.css" rel="stylesheet" />
   
- 
 </head>
+  
+ 
+
 
 <body>
 
-<form action="" class="container py-3 mx-auto">
-  
-  <div class="row py-3">
-    <div class="col-6" class="">
-      <label for="fName">First Name</label>
-      <input type="text" id="fName" class="form-control" name="fName" placeholder="John">
+  <form action="" class="container py-3 mx-auto">
+
+    <div class="row py-3">
+      <div class="col-6" class="">
+        <div id="error-warn" class="d-none">
+          <text class="text-danger">Fill in your real name (as stated in official documents).</p>
+        </div>
+        <label for="fName">First Name</label>
+        <input type="text" id="fName" class="form-control" name="firstName" placeholder="John" autocomplete="given-name">
+      </div>
+
+      <div id="error-warn" class="col" class="">
+        <div class="d-none error-warn">
+          <p class="text-danger">Fill in your real name (as stated in official documents).</p>
+        </div>
+        <label for="lName">Last Name</label>
+        <input type="text" id="lName" class="form-control" name="lastName" placeholder="Doe" autocomplete="family-name">
+      </div>
     </div>
-
-    <div class="col" class="">
-      <label for="lName">Last Name</label>
-      <input type="text" id="fName" class="form-control" name="lName" placeholder="Doe">
-    </div>
-  </div>
-  
-  <label for="phone" class="pt-3">Phone Number</label>
-  <input type="number" id="phone" class="form-control" name="phone" placeholder="+1 234 567 8901">
-
-  <label for="email" class="pt-3">Email</label>
-  <input type="text" id="email" class="form-control" name="email" placeholder="abc@example.xyz">
-
-  <!-- <label for="message" class="pt-3">Message</label>
-  <textarea type="text"id="message" name="message" placeholder="Drop a text?" rows="5" class="form-control"></textarea> -->
-
-  <button class="btn btn-bordered btn-primary mt-4">Send</button>
-</form>
-
-<script>
     
-  let validate = () => {
-    let num = document.getElementById("contactNumber");
-    if (num.value.length = 0) {
-      num.classList = "form-control";
-      document.getElementById("contactNumValidation").classList="d-none text-danger";
+    <div id="error-warn" class="d-none">
+      <p class="text-danger">Fill in your real phone number (as stated in official documents).</p>
+    </div>
+    <label for="phone" class="pt-3">Phone Number</label>
+    <input type="number" id="phone" class="form-control" name="phoneNum" placeholder="+1 234 567 8901" autocomplete="tel">
 
-    } else {
-    num.classList = "form-control-is-invalid"
+    
+    <div id="error-warn" class="d-none">
+      <p class="text-danger">Fill in your email address (as stated in official documents).</p>
+    </div>
+    <label for="email" class="pt-3">Email</label>
+    <input type="text" id="email" class="form-control" name="email" placeholder="abc@example.xyz" autocomplete="email">
+
+
+
+    <!-- <label for="message" class="pt-3">Message</label>
+    <textarea type="text"id="message" name="message" placeholder="Drop a text?" rows="5" class="form-control"></textarea> -->
+
+    <button type="button" class="btn btn-bordered btn-primary mt-4" onclick="validate()">Send</button>
+  </form>
+
+  <script>
+
+      
+   
+    let validate = () => {
+
+      if (document.getElementById("phone").value.length == 0) {
+        document.getElementById("error-warn").classList="";
+
+
+      }
+
     }
-  }
     
   
   </script>

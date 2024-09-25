@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+  <head>
+  	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <link href="script/practice.css" rel="stylesheet">
+    <link href="script/bootstrap.css" rel="stylesheet">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="userContactNumber">Contact Number:</label>
+      <input type="number" id="userContactNumber" placeholder="E.g. 81781613" class="form-control">
+      <button type="button" class="btn btn-primary" onclick="validate()">Submit</button>
+    </form>
+
+    <script>
+      const validate = () => {
+        let inputField = document.getElementById("userContactNumber");
+        console.log(inputField);
+      }
+    </script>
+  </body>
+</html>
