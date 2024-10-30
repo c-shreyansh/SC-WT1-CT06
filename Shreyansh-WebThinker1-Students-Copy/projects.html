@@ -21,17 +21,12 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navlinks">
 					<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link" href="aboutus.html">Abouts Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="memberspotlight.html">Members Spotlight</a></li>
 						<li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
 						<li class="nav-item"><a class="nav-link active" href="projects.html">Past Projects</a></li>
 						<li class="nav-item"><a class="nav-link" href="contacts.html">Contact Us</a></li>
 					</ul>
-					<a class="nav-brand ml-auto" href="https://shreyanshchowdhury.com">
-						<img src="shreybanner.png" alt="logo" class="d-inline-block" style="max-height:5rem">
-						<span class="d-none d-sm-inline-block align-middle">Shreyansh Chowdhury<small class="d-block lh-xs fs-7">S
-								Chowdhury</small></span>
-					</a>
 				</div>
 			</div>
 		</nav>
@@ -53,9 +48,37 @@
 		</div>
 		<!-- Key section -->
 		<div class="container py-3 pb-4">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<button class="nav-link rounded-pill active" data-bs-toggle="pill" data-bs-target="#scratch">Scratch</button>
+				</li>
+				<li class="nav-item">
+					<button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#canvas">HTML Canvas</button>
+				</li>
+			</ul>
 			<!-- Create An Unordered List with 2 List Items -->
+			 <!-- <ul class="nav nav-pills">
+				<li class="nav-item"><button class="nav-link rounded-pill active" data-bs-toggle="pill" data-bs-target="#scratch">Scratch Projects</button></li>
+				<li class="nav-item"><button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#canvas">HTML Canvas Projects</button></li>
+			 </ul> -->
+
+			<!-- <div class="tab-content">
+				<div class="tab-pane fade show active" id="scratch">
+					Scratch
+				</div>
+				<div class="tab-pane fade" id="canvas">
+					Canvas
+				</div>
+			</div> -->
 
 			<div class="tab-content">
+				<div class="tab-pane fade show active" id="scratch">
+					<h3>Monke & Banana</h3>
+					<iframe src="https://scratch.mit.edu/projects/808392264/embed" title="Monke & Banana Scratch Project" height="402" width="485"></iframe>
+					<br>
+					<h3>Platformer Game</h3>
+					<iframe src="https://scratch.mit.edu/projects/779856092/embed" title="Platformer Game" height="402" width="485"></iframe>
+				</div>
 				<!-- Create two tabs for Project Showcase
 	-  The first tab should have
 				- One header of "Monke & Banana" with the following source: https://scratch.mit.edu/projects/808392264/embed (Width 485 & Height 402)
@@ -66,13 +89,18 @@
 				- 2 radio buttons:
 						- One of them should be named "Pause Animation" with an ID of "canvasPause" with a red looking appearance.
 						- Another one should be named "Play Animation"  with an ID of "canvasPlay" with a green looking appearance.  -->
-
+				<div class="tab-pane" id="canvas">
+					<canvas id="canvasBoard" width="800" height="600" class="border border-dark"></canvas>
+				</div>
 			</div>
 		</div>
 	</article>
 	<!-- End of coding region -->
 	<footer class="bg-dark text-light">
-		<div class="container py-2 pb-4">Done by Computhink Kids SG.</div>
-	</footer>
+    	<div class="container py-2 pb-4">
+			<p>Made by Alfred</p>
+      		<!-- Footer Task 1: add in your footer here. usually all rights reserved your club/ company name -->
+    	</div>
+  	</footer>
 </body>
 </html>

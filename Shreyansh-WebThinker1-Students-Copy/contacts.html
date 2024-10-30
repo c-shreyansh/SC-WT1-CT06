@@ -57,20 +57,41 @@
 				<p>Hey there, fellow coder! Got a question? An idea? Just want to say 'Hi'? Drop us a line below. We'll get back to you quicker than a JavaScript loop!</p>
 			</div>
 		</div>
+
+		<form class="container py-3">
+			<div class="row gy-3">
+
+				<div class="col col-12 col-md-6">
+					<label for="contactName" class="form-label">Name</label>
+					<input type="text" class="form-control" id="contactName" placeholder="John Doe" />
+					<div id="contactNameFeedback" class="d-none text-danger">Please enter a name (according to official documents).</div>
+				</div>
+				<div class="col col-12 col-md-6">
+					<label for="contactEmail" class="form-label">Email Address</label>
+					<input type="email" class="form-control" id="contactEmail" placeholder="name@abc.com" />
+					<div id="contactEmailFeedback" class="d-none text-danger">Please enter an email (according to official documents).</div>
+				</div>
+				<div class="col col-12">
+					<label for="contactSubject" class="form-label">Subject</label>
+					<input type="text" class="form-control" id="contactSubject" placeholder="Enquiry on how to code" />
+					<div id="contactSubjectFeedback" class="d-none text-danger">Please enter the subject of your query.</div>
+				</div>
+				<div class="col col-12">
+					<label for="contactMessage" class="form-label">Message</label>
+					<textarea type="text" class="form-control" id="contactMessage" rows=5></textarea>
+					<div id="contactMessageFeedback" class="d-none text-danger">Message should be more than 20 characters.</div>
+				</div>
+			</div>
+			<div class="py-3 pb-4">
+				<button type="button" class="btn btn-primary" onclick="validate()">Send</button>
+			</div>
+		</form>
+		
 		<!-- Key section -->
 		
 		<script>
-			// let a = -69+69;
-
-			// if (a > 0) {
-			// 	console.log ("Positive number");
-			// } else if (a < 0) {
-			// 	console.log ("Negative number");
-			// } else {
-			// 	console.log ("Zero.");
-			// }
 			
-
+			
 		</script> 
 	</article> 
 	<!-- End of coding region -->
